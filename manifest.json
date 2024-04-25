@@ -1,9 +1,23 @@
 {
-  "name": "Action popup demo",
-  "version": "1.0",
+  "name": "AI Translate",
+  "version": "1.0.0",
   "manifest_version": 3,
+  "description": "AI Translate use gemini bot",
+  "icons": {
+    "512": "images/Icon-512.png"
+  },
+  "permissions": ["storage", "tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
   "action": {
-    "default_title": "Click to view a popup",
+    "default_title": "AI Translate!\nClick to view the popup",
     "default_popup": "popup.html"
   }
-}
+} 

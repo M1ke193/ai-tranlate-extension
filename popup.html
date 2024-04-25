@@ -1,16 +1,20 @@
-<!-- popup.html -->
 <!DOCTYPE html>
 <html>
-<head>
-  <style>
-    html {
-      min-height: 5em;
-      min-width: 10em;
-      background: salmon;
-    }
-  </style>
-</head>
-<body>
-  <p>Hello, world!</p>
-</body>
+  <head>
+    <link rel="stylesheet" type="text/css" href="popup.css" />
+    <script type="module" src="popup.js"></script>
+  </head>
+  <body>
+    <div class="popupContent" id="popupContent">
+      <div class="title">
+        <h1>AI</h1>
+        <h1>TRANSLATE</h1>
+      </div>
+      <div class="toggleActive" id="toggleActive">
+        <span class="circleToggle"></span>
+        <span class="onStatus">ON</span>
+        <span class="offStatus">OFF</span>
+      </div>
+    </div>
+  </body>
 </html>
